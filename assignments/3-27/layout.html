@@ -3,9 +3,73 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Website homepage</title>
+  <style>
+    body {
+      font-size: 1.5rem;
+      margin: 2rem;
+    }
+    header{
+      padding: 2rem;
+      background-color:#92ba95 ;
+    }
+    menu {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+    }
+    menu.flex-container{
+      justify-content: left;
+    }
+    main{      
+      background-color: #83ebca;
+    }
+    p{
+      padding:1rem;
+      /* margin:.1rem;  this is no longer needed as flex is handling it*/
+      border:1px solid #000;
+    }
+    footer {
+      padding: 2rem;
+      background-color: #b6c0ff;
+    }
+    .flex-container {
+      /* added this to bottom for easy location to find*/
+      display:flex; /*left to right by default */
+      /* flex-direction: column;  "this one will always be colums.*/
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  </style>
 </head>
 <body>
-  
+ <header>
+  <!-- To Do: add logo -->
+    <nav>
+      <menu class="flex-container"> <!--ol will give an order list with numbers -->
+        <li>Home</li>
+        <li>About me</li>
+        <li>Reasons</li>
+        <li>Livestock</li>
+        <li>Tips and Tricks</li>
+      </menu>
+    </nav>
+  </header>
+  <main>
+    <!--Every page must have a header 1 -->
+    <h1>Livestock Judging</h1>
+    <img src="../../assets/images/Figmaimage.png" alt="base figma for assignment" />
+    <div class="flex-container">
+      <p>This will be an intro paragraph talking about judging</p>
+      <p>I put some text</p>
+      <p>I put some text</p>
+      <p>I put some text</p>
+      <p>I put some text</p>
+    </div>
+    
+  </main>
+  <footer>
+    I am adding stuff here so I can see a footer
+  </footer>
 </body>
 </html>
