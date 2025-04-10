@@ -4,11 +4,39 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reasonings</title>
+  <link rel="stylesheet" href="../../styles/menu.css">
 </head>
 <body>
+  <nav>
+    <!-- https://www.w3schools.com/charsets/ref_utf_geometric.asp -->
+    <button onclick="toggleMenu()">Menu <span id="arrow">&#9656;</span></button>
+    <div class="dropdown" id="menu">
+      <!-- your home would be index.html, mine isn't because it is an example -->
+      <a href="home.html">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="reasons.html">Reasons</a>
+      <a href="goat-pig.html">Goats and Pigs</a>
+      <a href="sheep-cow.html">Sheep and Beef</a>
+    </div>
+  </nav>
   <h1>Reasonings</h1>
   <p>
     fill in with lists and quickhand tips
   </p>
+
+    <script>
+    function toggleMenu() {
+      menu = document.getElementById("menu");
+      arrow = document.getElementById("arrow");
+      menu.classList.toggle("show");
+
+      if (menu.classList.contains("show")) {
+        arrow.innerHTML = "&#9662;"; // Change to down-pointing arrow
+      } else {
+        arrow.innerHTML = "&#9656;"; // Change back to right-pointing arrow
+      }
+    }
+
+  </script>
 </body>
 </html>
