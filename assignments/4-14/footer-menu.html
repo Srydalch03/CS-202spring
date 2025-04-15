@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Dropdown Menu</title>
+  <link rel="stylesheet" href="../../styles/menu.css">
+</head>
+
+<body>
+  <header>
+    <h1>This is the header</h1>
+  </header>
+  <p>
+    this is proof that there is space between the top and the bottom for the assignments.
+    How offten do people actually scroll all the way to the bottom.
+    Savannah remember to look into either doing a scrolling top or bottom
+  </p>
+  <footer>
+    <nav>
+      <!-- https://www.w3schools.com/charsets/ref_utf_geometric.asp -->
+      <button onclick="toggleMenu()">Menu <span id="arrow">&#9656;</span></button>
+      <div class="dropdown" id="menu">
+        <a href="menu-with-links.html">Menu page</a>
+        <a href="../../pages/home.html">Home</a>
+        <a href="../../pages/aboutme.html">About Me</a>
+        <a href="../../pages/reasons.html">Reasons</a>
+        <a href="../../pages/goat-pig.html">Goats and Pigs</a>
+        <a href="../../pages/sheep-cow.html">Sheep and Beef</a>
+      </div>
+    </nav>
+  </footer>
+  <script>
+    function toggleMenu() {
+      menu = document.getElementById("menu");
+      arrow = document.getElementById("arrow");
+      menu.classList.toggle("show");
+
+      if (menu.classList.contains("show")) {
+        arrow.innerHTML = "&#9662;"; // Change to down-pointing arrow
+      } else {
+        arrow.innerHTML = "&#9656;"; // Change back to right-pointing arrow
+      }
+    }
+
+  </script>
+</body>
