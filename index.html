@@ -4,11 +4,55 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reasons home page</title>
+  <title>Home Page</title>
+  <link rel="stylesheet" href="styles/base.css">
 </head>
+<style>
+
+</style>
 
 <body>
+  <header>
+    <nav>
+      <!-- https://www.w3schools.com/charsets/ref_utf_geometric.asp -->
+      <button onclick="toggleMenu()">Menu <span id="arrow">&#9656;</span></button>
+      <div class="dropdown" id="menu">
+        <a href="index.html">Home</a>
+        <a href="pages/aboutme.html">About Me</a>
+        <a href="pages/reasons.html">Reasons</a>
+        <a href="pages/goat-pig.html">Goats and Pigs</a>
+        <a href="pages/sheep-cow.html">Sheep and Beef</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="flex-container">
+      <img src="assets/images/firstimage.png" alt="four lambs set up for judging">
+      <p>
+        When it comes to livestock many people see only the sowing of the animals, and think that they cannot
+        get involved
+      </p>
+    </div>
+  </main>
+  <footer>
+    <a href="https://www.livestockjudging.com/">free
+      judging classes</a>
+  </footer>
 
+  <script>
+    function toggleMenu() {
+      menu = document.getElementById("menu");
+      arrow = document.getElementById("arrow");
+      menu.classList.toggle("show");
+
+      if (menu.classList.contains("show")) {
+        arrow.innerHTML = "&#9662;"; // Change to down-pointing arrow
+      } else {
+        arrow.innerHTML = "&#9656;"; // Change back to right-pointing arrow
+      }
+    }
+
+  </script>
 </body>
 
 </html>
