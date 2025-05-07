@@ -1,31 +1,44 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me</title>
-  <link rel="stylesheet" href="../styles/menu.css">
+  <link rel="stylesheet" href="../styles/base.css">
 </head>
+
 <body>
   <header>
-  <nav>
-    <!-- https://www.w3schools.com/charsets/ref_utf_geometric.asp -->
-    <button onclick="toggleMenu()">Menu <span id="arrow">&#9656;</span></button>
-    <div class="dropdown" id="menu">
-      <a href="../assignments/4-8/menu-with-links.html">Menu page</a>
-      <a href="home.html">Home</a>
-      <a href="aboutme.html">About Me</a>
-      <a href="reasons.html">Reasons</a>
-      <a href="goat-pig.html">Goats and Pigs</a>
-      <a href="sheep-cow.html">Sheep and Beef</a>
-    </div>
-  </nav>
+    <nav>
+      <!-- https://www.w3schools.com/charsets/ref_utf_geometric.asp -->
+      <button onclick="toggleMenu()">Menu <span id="arrow">&#9656;</span></button>
+      <div class="dropdown" id="menu">
+        <a href="../index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="reasons.html">Reasons</a>
+        <a href="goat-pig.html">Goats and Pigs</a>
+        <a href="sheep-cow.html">Sheep and Beef</a>
+      </div>
+    </nav>
   </header>
   <h1>About me Page</h1>
 
-  <p>
-    note: actual content being worked on in practice will edit this later
-  </p>
+  <div class="flex-container-image-first">
+    <img src="../assets/images/personalphoto.jpg" alt="image of page owner showing a sheep">
+    <p>
+      I was raised in the agriculture world there was not a day where I was not either going to the
+      potato warehouse where my father worked or going to work with my own lambs durning the fair season.
+      when I was not activly raising a livestock animal I was working on judging animals. The ability to judge
+      livestock helps when you are needing to pick out the animal that you would like to show for the year, or 
+      the animals that you would like to add to the herd in order to bring in better genetics.
+      That is what got me started on the judging path but it can be difficult to follow.
+    </p>
+  </div>
+  <footer>
+    <a href="https://www.livestockjudging.com/">freejudging classes</a>
+    <span> Contact (208)XXX-XXXX</span>
+  </footer>
   <script>
     function toggleMenu() {
       menu = document.getElementById("menu");
@@ -40,4 +53,5 @@
     }
   </script>
 </body>
+
 </html>
