@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sheep and Beef Judging</title>
-  <link rel="stylesheet" href="../styles/menu.css">
+  <link rel="stylesheet" href="../styles/base.css">
 </head>
 
 <body>
@@ -13,24 +13,57 @@
     <!-- https://www.w3schools.com/charsets/ref_utf_geometric.asp -->
     <button onclick="toggleMenu()">Menu <span id="arrow">&#9656;</span></button>
     <div class="dropdown" id="menu">
-      <a href="../assignments/4-8/menu-with-links.html">Menu page</a>
-      <a href="home.html">Home</a>
+      <a href="../index.html">Home</a>
       <a href="aboutme.html">About Me</a>
       <a href="reasons.html">Reasons</a>
       <a href="goat-pig.html">Goats and Pigs</a>
-      <a href="sheep-cow.html">Sheep and Beef</a>
+      <a href="sheep-cow.html">Sheep and Steers</a>
     </div>
   </nav>
-  <h1>Sheep and Beef</h1>
-  <p>
-    make sure to make a list that includes a the 5 body types
-  </p>
-  
-  <!-- 
-    Scripts are often in the <head> </head> or just before the closing body tag.
-    Putting at the bottom helps ensure that the script runs after the DOM (think "page") is loaded. 
-  -->
+  <h1>Steers and Sheep</h1>
+  <h2>Steers</h2>
+  <span class="fleximage" id="cows">
+    <img src="../assets/images/charletcow.jpg" alt="A Cherlet cow showing">
+    <img src="../assets/images/hertford-cow.jpg" alt="A hertford cow showing">
+    <img src="../assets/images/charolais2.jpg" alt="A Charolais cow showing">
+    <img src="../assets/images/hertfordcow2.jpg" alt="A hertford cow showing">
+  </span>
+  <main>
+    <p>Above are 4 different photos of a steers. When it comes to judging all types of market
+      livestock it is importent to rember the 5 structurs of judging. In order of most importent to least
+    </p>
+    <ol>
+      <li><strong>Muscle</strong>:This is the overall coverage of the muscle in comparison to fat on the steer</li>
+      <li><strong>Volume</strong>:This is how large is the animal, but don't think of it as how much meat am I going to
+        get off when it is butchard</li>
+      <li><strong>Balance</strong>:Have you ever seen an animal and thought that their legs were to short for their body
+        that is Balance</li>
+      <li><strong>Structure</strong>: Structure and Balance are interchangeable on anyday, the structure is what allows
+        the animal to move, thisis often judged by how they stand or walk.</li>
+      <li><strong>Bone</strong>:The animal needs to be able to suport the muscle that is requestted. The Bone needs to
+        be proportionet.</li>
+    </ol>
+  </main>
+  <h2>Sheep</h2>
+  <article class="sheep">
+    <img src="../assets/images/sheepshow1.jpg" alt="A round of sheep showers in the different">
+    <p>
+      When judging market lambs, evaluators look for animals that offer the most value in terms of meat production,
+      structural soundness, and overall balance. Successful lambs should be well-muscled, correctly built, and show
+      strong indicators of performance and finish.
+    </p>
+    <h3>Tips for Judging</h3>
+    <ul>
+      <li>View lambs from multiple angles to assess structure and muscle shape.</li>
+      <li>Pay close attention to how lambs track when walking—proper alignment matters.</li>
+      <li>Use terms like <em>"level-topped," "big-hipped," "trim and expressive through the rack and loin."</em></li>
+    </ul>
+  </article>
 
+  <footer>
+    <a href="https://www.livestockjudging.com/">freejudging classes</a>
+    <span> Contact (208)XXX-XXXX</span>
+  </footer>
   <script>
     function toggleMenu() {
       menu = document.getElementById("menu");
