@@ -1,32 +1,96 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reasonings</title>
-  <link rel="stylesheet" href="../styles/menu.css">
+  <link rel="stylesheet" href="../styles/base.css">
 </head>
+
 <body>
   <header>
-  <nav>
-    <!-- https://www.w3schools.com/charsets/ref_utf_geometric.asp -->
-    <button onclick="toggleMenu()">Menu <span id="arrow">&#9656;</span></button>
-    <div class="dropdown" id="menu">
-      <a href="../assignments/4-8/menu-with-links.html">Menu page</a>
-      <a href="home.html">Home</a>
-      <a href="aboutme.html">About Me</a>
-      <a href="reasons.html">Reasons</a>
-      <a href="goat-pig.html">Goats and Pigs</a>
-      <a href="sheep-cow.html">Sheep and Beef</a>
-    </div>
-  </nav>
+    <nav>
+      <!-- https://www.w3schools.com/charsets/ref_utf_geometric.asp -->
+      <button onclick="toggleMenu()">Menu <span id="arrow">&#9656;</span></button>
+      <div class="dropdown" id="menu">
+        <a href="../index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="reasons.html">Reasons</a>
+        <a href="goat-pig.html">Goats and Pigs</a>
+        <a href="sheep-cow.html">Sheep and Beef</a>
+      </div>
+    </nav>
   </header>
   <h1>Reasonings</h1>
+  <h2>Livestock Judging Reasons</h2>
   <p>
-    fill in with lists and quickhand tips
+    In livestock judging competitions, <strong>oral reasons</strong> are a crucial part of the evaluation process. These
+    are short, structured speeches in which contestants <strong>justify the placement</strong> of animals in a class
+    based on their physical traits and performance qualities. Reasons test a participant’s ability to <strong>observe,
+      evaluate, and communicate effectively</strong>.
   </p>
 
-    <script>
+  <h3>Purpose of Giving Reasons</h3>
+  <ul>
+    <li>To explain and defend how a contestant placed the animals in a class.</li>
+    <li>To demonstrate knowledge of livestock structure, muscle, balance, and other breed-specific traits.</li>
+    <li>To show the ability to make sound decisions and express them clearly.</li>
+  </ul>
+
+  <h3>Structure of Reasons</h3>
+  <ol>
+    <li>
+      <strong>Introduction</strong><br>
+      Start by stating the class and your placing.<br>
+      <em>Example: “I placed this class of market goats 3-1-4-2.”</em>
+    </li>
+    <li>
+      <strong>Top Pair</strong><br>
+      Explain why your top animal placed over the second, highlighting strengths like structural correctness, muscle
+      volume, or breed character.
+    </li>
+    <li>
+      <strong>Middle Pair</strong><br>
+      Justify your middle pair placing and identify what prevented the lower animal from ranking higher.
+    </li>
+    <li>
+      <strong>Bottom Pair</strong><br>
+      Explain why the third animal beats the fourth, and fairly evaluate the last-place animal, noting strengths if
+      applicable.
+    </li>
+  </ol>
+
+  <h3>Key Elements of Strong Reasons</h3>
+  <ul>
+    <li><strong>Accuracy</strong>:Base your statements on what you saw.</li>
+    <li><strong>Clarity</strong>:Organize your points logically and avoid filler words.</li>
+    <li><strong>Terminology</strong>:Use species-specific terms like <em>spring of rib</em>, <em>muscle
+        expression</em>, <em>levelness of top</em>, and <em>base width</em>.</li>
+    <li><strong>Confidence</strong>:Deliver your reasons clearly, without notes, and in a calm, professional tone.
+    </li>
+  </ul>
+
+  <h3>Identifying Separating Characteristics</h3>
+  <p>
+    It’s important to <strong>identify key differences</strong> that help justify placings. These can include:
+  </p>
+  <ul>
+    <li><strong>Halter color</strong> or style (when animals are led)</li>
+    <li><strong>Fur color</strong>, <strong>skin patterns</strong>, or <strong>markings</strong></li>
+    <li><strong>Breed identification</strong> and breed-specific traits</li>
+  </ul>
+
+  <p>
+    By focusing on these distinguishing characteristics and backing up decisions with solid reasoning, contestants can
+    earn higher scores and become more confident livestock evaluators.
+  </p>
+  </section>
+  <footer>
+    <a href="https://www.livestockjudging.com/">freejudging classes</a>
+    <span> Contact (208)XXX-XXXX</span>
+  </footer>
+  <script>
     function toggleMenu() {
       menu = document.getElementById("menu");
       arrow = document.getElementById("arrow");
@@ -41,4 +105,5 @@
 
   </script>
 </body>
+
 </html>
