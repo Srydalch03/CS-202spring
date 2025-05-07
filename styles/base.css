@@ -3,7 +3,7 @@ body {
   margin: 0;
 }
 header{
-  border:1px,#333,show
+  border:1px#333 solid;
 }
 
 nav {
@@ -60,18 +60,66 @@ nav button {
 }
 body{
   background-color: #eae0cf;
+  padding:1rem;
 }
-.flex-container{
-  display:flexbox;
+h2{
+  font-size: 2rem;
+}
+.flex-container-image-first{
+  display:flex;
   flex-wrap: wrap;
-  flex-flow: column wrap;
+  flex-direction: row;
+  padding:1rem;
+}
+.flex-container-image-second{
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column-reverse;
+  padding:1rem;
+}
+@media (min-width: 768px) {
+  .flex-container-image-first {
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+  .flex-container-image-second {
+    flex-direction: row;
+  }
 }
 img{
-  width:50%;
+  width:40%;
   height: auto;
+ 
 }
+
 p{
+  width: 50%;
   flex-wrap: wrap;
+}
+main{
+  font-size: 20px;
+}
+.sheep{
+  width:100%;
+}
+span{
+  border:#333 1px solid;
+  margin: 1rem;
+  padding:.5rem;
+}
+.fleximage{
+  display:flex;
+  flex-wrap: wrap;
+  margin:1rem;
+}
+#cows{
+  flex-wrap:wrap;
+}
+@media (max-width: 768px) {
+  .fleximage{
+    flex-direction: column;
+  }
 }
 footer{
   background-color: #cac2b2;
